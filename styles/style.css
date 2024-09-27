@@ -13,7 +13,7 @@ html {
   block-size: 100%;
   margin: auto;
   color: #fff;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   background-color: #1b1919;
   display: flex;
@@ -86,6 +86,11 @@ ol {
   min-width: 212px;
 }
 
+.search-form__checkbox-list > .search-form__label {
+  display: flex;
+  gap: 5px;
+}
+
 .search-form__checkbox:focus {
   outline: none;
 }
@@ -154,7 +159,7 @@ ol {
   vertical-align: middle;
   background: none;
   border: 1px solid #fff;
-  position: relative;
+  /* position: relative; */
 }
 
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::before {
@@ -162,8 +167,11 @@ ol {
   background-color: #fff;
   height: 15px;
   width: 15px;
-  position: absolute;
-  inset: 1px;
+  /* position: absolute;
+  inset: 1px; */
+  display: block;
+  margin-top: 1px;
+  margin-left: 1px;
 }
 
 .button {
